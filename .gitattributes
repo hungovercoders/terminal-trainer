@@ -1,0 +1,22 @@
+# Set default behaviour to automatically normalize line endings
+* text=auto
+
+# Go files
+*.go text diff=go
+
+# Markdown files
+*.md text
+
+# Shell scripts
+*.sh text eol=lf
+
+# YAML files
+*.yml text
+*.yaml text
+
+# Ignore binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
