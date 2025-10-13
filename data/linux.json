@@ -1,0 +1,30 @@
+        [
+            {
+                "command": "ls",
+                "description": "List files in current directory"
+            },
+            {
+                "command": "cd",
+                "description": "Change directory"
+            },
+            {
+                "command": "pwd",
+                "description": "Print working directory"
+            },
+            {
+                "command": "mkdir",
+                "description": "Create a new directory"
+            },
+            {
+                "command": "rm",
+                "description": "Remove files or directories"
+            },
+            {
+                "command": "cp",
+                "description": "Copy files or directories"
+            },
+            {
+                "command": "mv",
+                "description": "Move or rename files or directories"
+            }
+        ]
