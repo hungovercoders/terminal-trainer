@@ -6,8 +6,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/spf13/cobra"
 	"terminal-trainer/terminaltrainer"
+
+	"github.com/spf13/cobra"
 )
 
 var cheatCmd = &cobra.Command{
