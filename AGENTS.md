@@ -16,3 +16,5 @@ The logic and state will be kept separate to the CLI itself so that it can be us
 
 - Interactive tutorials for common command line tools
 - Cheat-sheets for quick reference
+
+This repository uses [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for commit messages.
