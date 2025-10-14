@@ -1,0 +1,35 @@
+{
+    "category": "shortcuts",
+    "shortcuts": [
+        {
+            "command": "CTRL + '",
+            "description": "Open integrated terminal",
+            "question": "What is the shortcut to open the integrated terminal in VSCode?"
+        },
+        {
+            "command": "CTRL + P",
+            "description": "Quick open files",
+            "question": "What is the shortcut to quickly open files in VSCode?"
+        },
+        {
+            "command": "CTRL + ,",
+            "description": "Open settings",
+            "question": "What is the shortcut to open settings in VSCode?"
+        },
+        {
+            "command": "CTRL + K + W",
+            "description": "Close all editors",
+            "question": "What is the shortcut to close all editors in VSCode?"
+        },
+        {
+            "command": "CTRL + SHIFT + E",
+            "description": "Open Explorer view",
+            "question": "What is the shortcut to open the Explorer view in VSCode?"
+        },
+        {
+            "command": "CTRL + SHIFT + G",
+            "description": "Open Source Control view",
+            "question": "What is the shortcut to open the Source Control view in VSCode?"
+        }
+    ]
+}
