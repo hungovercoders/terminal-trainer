@@ -1,0 +1,15 @@
+{
+    "category": "file_management",
+    "shortcuts": [
+        {
+            "command": "CTRL + '",
+            "description": "Open integrated terminal",
+            "question": "What is the shortcut to open the integrated terminal in VSCode?"
+        },
+        {
+            "command": "CTRL + P",
+            "description": "Quick open files",
+            "question": "What is the shortcut to quickly open files in VSCode?"
+        }
+    ]
+}
