@@ -1,6 +1,6 @@
 package main
 
-import "terminal-trainer/experience/cli/cmd"
+import "terminal-trainer-cli/cmd"
 
 func main() {
 	cmd.Execute()

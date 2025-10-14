@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"terminal-trainer/terminaltrainer"
+	"terminal-trainer/behaviour/terminaltrainer"
 
 	"github.com/spf13/cobra"
 )

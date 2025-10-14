@@ -8,6 +8,10 @@
 *.so
 *.dylib
 
+# Built binary (add your binary name here)
+terminal-trainer
+experience/cli/terminal-trainer
+
 # Test binary, built with `go test -c`
 *.test
 
@@ -24,9 +28,37 @@ profile.cov
 go.work
 go.work.sum
 
+# Build cache
+.cache/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Debug files
+debug
+__debug_bin*
+
 # env file
 .env
+.env.local
+.env.*.local
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
 # Editor/IDE
-# .idea/
-# .vscode/
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Log files
+*.log
