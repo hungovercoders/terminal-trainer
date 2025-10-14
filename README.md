@@ -2,6 +2,40 @@
 
 Tool to help people learn how to use the terminal for a range of tools
 
+## Installation
+
+### Quick Install (Recommended)
+
+```bash
+# Clone and install globally
+git clone https://github.com/hungovercoders/terminal-trainer
+cd terminal-trainer
+./install.sh
+```
+
+After installation, you can use:
+
+- `terminaltrainer` or `tt` (aliases)  
+- `terminal-trainer-cli` (full name)
+
+### Manual Install
+
+```bash
+# Install directly with go
+cd experience/cli
+go install .
+
+# Create your own aliases
+echo 'alias tt="terminal-trainer-cli"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+### Uninstall
+
+```bash
+./uninstall.sh
+```
+
 ## Build
 
 ```bash
@@ -13,10 +47,30 @@ go build -o terminal-trainer main.go
 ./terminal-trainer.sh --help
 ```
 
-## See all options
+## Usage Examples
+
+After installation, use any of these commands:
 
 ```bash
-# Using convenience script from project root
+# Short and sweet! 
+tt --help
+tt quiz --topic linux --count 5
+tt cheat --topic git
+
+# Full alias
+terminaltrainer --help
+terminaltrainer quiz --topic docker
+
+# Full binary name  
+terminal-trainer-cli --help
+```
+
+## Development Usage
+
+If you're working on the code locally:
+
+```bash
+# Using convenience script
 ./terminal-trainer.sh --help
 
 # Or from CLI directory
@@ -26,32 +80,16 @@ cd experience/cli && ./terminal-trainer --help
 cd experience/cli && go run . --help
 ```
 
-## Interactive quiz
+## Available Topics
 
-```bash
-# Using convenience script
-./terminal-trainer.sh quiz --topic linux --count 5 --verbose
+- `linux` - Basic Linux commands (ls, cd, mkdir, etc.)
+- `git` - Git version control commands  
+- `docker` - Docker containerization commands
+- `kubectl` - Kubernetes management commands
+- `vscode` - VS Code shortcuts and commands
 
-# Or from CLI directory  
-cd experience/cli && ./terminal-trainer quiz --topic linux --count 5 --verbose
-```
+## Available Commands
 
-## Quick reference
-
-```bash
-# Using convenience script
-./terminal-trainer.sh cheat --topic linux
-
-# Or from CLI directory
-cd experience/cli && ./terminal-trainer cheat --topic linux
-```
-
-## Basic welcome
-
-```bash
-# Using convenience script
-./terminal-trainer.sh
-
-# Or from CLI directory
-cd experience/cli && ./terminal-trainer
-```
+- `quiz` - Interactive learning with questions
+- `cheat` - Quick reference guide
+- `help` - Show help information
