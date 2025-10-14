@@ -9,8 +9,14 @@ Example command line tools that people will want to learn include:
 - kubectl
 - linux commands
 
+The tool will be built in go.
+The tool will leverage cobra-cli for the command line interface.
+The tool will leverage bubbletea for interactive command line experiences.
+Test driven development should be leveraged.
+
 The CLI will be built in go so that installation is simple and it can be used on any platform.
-The logic and state will be kept separate to the CLI itself so that it can be used in other contexts, such as a web app or a desktop app.
+The logic and state will be kept in the behaviour directory separate to the CLI itself so that it can be used in other contexts, such as a web app or a desktop app.
+The CLI is an experience and will be kept in the experience directory separate from the behaviour.
 
 ## Features
 
