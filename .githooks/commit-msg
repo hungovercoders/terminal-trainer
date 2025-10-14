@@ -7,5 +7,7 @@ if ! grep -qE "$commit_regex" "$1"; then
     echo "Invalid commit message format!"
     echo "Please use: <type>[optional scope]: <description>"
     echo "Types: feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert"
+    echo "Example without scope: feat: add new feature"
+    echo "Example with scope: feat(parser): add new parsing feature"
     exit 1
 fi

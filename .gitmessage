@@ -5,7 +5,9 @@
 # [optional footer(s)]
 
 # Types: feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert
-# Examples:
+# Example without scope: feat: add new feature
+# Example with scope: feat(parser): add new parsing feature
+# Example Types:
 # feat: add new tutorial for git commands
 # fix: correct typo in linux commands description
 # docs: update README with installation instructions
