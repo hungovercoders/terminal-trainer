@@ -1,10 +1,6 @@
-/*
-Copyright © 2025 NAME HERE <EMAIL ADDRESS>
-
-*/
 package main
 
-import "cli/cmd"
+import "terminal-trainer/experience/cli/cmd"
 
 func main() {
 	cmd.Execute()

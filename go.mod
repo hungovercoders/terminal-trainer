@@ -1,4 +1,4 @@
-module cli
+module terminal-trainer
 
 go 1.24.5
 
