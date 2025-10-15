@@ -19,10 +19,8 @@ jobs:
       
       - name: Debug repository structure
         run: |
-          pwd
-          ls -la
           ls -la knowledge/ || echo "knowledge directory not found"
-          ls -la experience/cli/
+          ls -la experience/cli/ || echo "cli directory not found"
       
       - name: Set up Go
         uses: actions/setup-go@v4
