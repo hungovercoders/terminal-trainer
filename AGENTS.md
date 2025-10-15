@@ -18,9 +18,16 @@ The CLI will be built in go so that installation is simple and it can be used on
 The logic and state will be kept in the behaviour directory separate to the CLI itself so that it can be used in other contexts, such as a web app or a desktop app.
 The CLI is an experience and will be kept in the experience directory separate from the behaviour.
 
+## Contributing
+
+This repository uses [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for commit messages.
+
 ## Features
 
 - Interactive tutorials for common command line tools
 - Cheat-sheets for quick reference
 
-This repository uses [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for commit messages.
+## Usage
+
+The CLI will be published and be easy to install via a single command.
+Instructions of how to use the CLI will be in the README.md file.
