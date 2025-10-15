@@ -32,8 +32,6 @@ archives:
       {{- else if eq .Arch "386" }}i386
       {{- else }}{{ .Arch }}{{ end }}
     files:
-      - README.md
-      - LICENSE
       - "../../knowledge/**/*.json"
 
 changelog:
