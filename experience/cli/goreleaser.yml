@@ -1,3 +1,5 @@
+version: 2
+
 project_name: terminal-trainer
 
 before:
@@ -22,16 +24,15 @@ builds:
       - -mod=vendor
 
 archives:
-  - format: tar.gz
+  - format_overrides:
+      - goos: windows
+        format: zip
     name_template: >-
       {{ .ProjectName }}_
       {{- title .Os }}_
       {{- if eq .Arch "amd64" }}x86_64
       {{- else if eq .Arch "386" }}i386
       {{- else }}{{ .Arch }}{{ end }}
-    format_overrides:
-      - goos: windows
-        format: zip
 
 changelog:
   sort: asc
@@ -49,9 +50,6 @@ universal_binaries:
 brews:
   - name: terminal-trainer
     homepage: https://github.com/hungovercoders/terminal-trainer
-    tap:
+    repository:
       owner: hungovercoders
       name: homebrew-terminal-trainer
-
-checksums:
-  - name_template: "checksums.txt"
