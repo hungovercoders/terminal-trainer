@@ -50,4 +50,4 @@ brews:
     homepage: https://github.com/hungovercoders/terminal-trainer
     repository:
       owner: hungovercoders
-      name: homebrew-terminal-trainer
+      name: terminal-trainer
