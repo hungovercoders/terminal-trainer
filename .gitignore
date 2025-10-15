@@ -65,3 +65,6 @@ Thumbs.db
 
 # Vendor directory
 vendor/
+
+# Temp copied files
+bundle/

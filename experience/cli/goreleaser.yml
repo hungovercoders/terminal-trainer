@@ -2,8 +2,12 @@ project_name: terminal-trainer
 
 before:
   hooks:
+    # keep your existing steps
     - go mod tidy
     - go mod vendor
+    # copy JSONs from the repo root into a local bundle dir
+    - mkdir -p ./bundle/knowledge
+    - cp -R ../../knowledge/*.json ./bundle/knowledge/
 
 builds:
   - env:
@@ -26,13 +30,14 @@ archives:
       - goos: windows
         format: zip
     name_template: >-
-      {{ .ProjectName }}_
-      {{- title .Os }}_
-      {{- if eq .Arch "amd64" }}x86_64
-      {{- else if eq .Arch "386" }}i386
-      {{- else }}{{ .Arch }}{{ end }}
+      {{ .ProjectName }}_{{- title .Os }}_{{- if eq .Arch "amd64" }}x86_64{{- else if eq .Arch "386" }}i386{{- else }}{{ .Arch }}{{ end }}
     files:
-      - "../../knowledge/**/*.json"
+      # include the copied JSONs inside the archive under knowledge/
+      - src: ./bundle/knowledge/*.json
+        dst: knowledge/
+      # (optional) add other top-level files if you want them in the archive:
+      # - LICENSE
+      # - README.md
 
 changelog:
   sort: asc
@@ -46,6 +51,7 @@ release:
 
 universal_binaries:
   - replace: true
+
 
 # brews:
 #   - name: terminal-trainer
