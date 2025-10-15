@@ -15,13 +15,24 @@ curl -sSL https://raw.githubusercontent.com/hungovercoders/terminal-trainer/main
 **Windows (PowerShell):**
 
 ```powershell
+# PowerShell 5.1+ (Windows 10/11)
+Invoke-RestMethod https://raw.githubusercontent.com/hungovercoders/terminal-trainer/main/install-windows.ps1 | Invoke-Expression
+
+# PowerShell 7+ (alternative short form)
 irm https://raw.githubusercontent.com/hungovercoders/terminal-trainer/main/install-windows.ps1 | iex
 ```
 
-**Windows (Git Bash/WSL):**
+**Windows (Git Bash/WSL/MSYS2):**
 
 ```bash
 curl -sSL https://raw.githubusercontent.com/hungovercoders/terminal-trainer/main/install-release.sh | bash
+```
+
+**Windows (CMD/Batch):**
+
+```cmd
+@REM Download and run batch installer
+curl -o install.bat https://raw.githubusercontent.com/hungovercoders/terminal-trainer/main/install-windows.bat && install.bat
 ```
 
 ### Download Binary (Manual)
