@@ -3,7 +3,7 @@ name: Release
 on:
   push:
     tags:
-      - 'v*'
+      - '*' ##TODO: might need version here
 
 jobs:
   goreleaser:

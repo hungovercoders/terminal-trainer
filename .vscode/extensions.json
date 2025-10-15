@@ -1,6 +1,7 @@
 {
     // Recommended VS Code extensions for Terminal Trainer development
     "recommendations": [
-        "golang.go"
+        "golang.go",
+        "github.vscode-github-actions"
     ]
 }
