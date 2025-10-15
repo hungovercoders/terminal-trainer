@@ -4,30 +4,40 @@ Tool to help people learn how to use the terminal for a range of tools
 
 ## Installation
 
-### Quick Install (Recommended)
+### Quick Install Script (Recommended)
 
 ```bash
-# Clone and install globally
-git clone https://github.com/hungovercoders/terminal-trainer
-cd terminal-trainer
-./install.sh
+curl -sSL https://raw.githubusercontent.com/hungovercoders/terminal-trainer/main/install-release.sh | bash
 ```
 
-After installation, you can use:
+### Download Binary (Manual)
 
-- `terminaltrainer` or `tt` (aliases)  
-- `terminal-trainer-cli` (full name)
-
-### Manual Install
+1. Go to [Releases](https://github.com/hungovercoders/terminal-trainer/releases)
+2. Download the binary for your OS/architecture
+3. Extract and move to your PATH:
 
 ```bash
-# Install directly with go
-cd experience/cli
-go install .
+# Linux/macOS
+tar -xzf terminal-trainer_*.tar.gz
+sudo mv terminal-trainer /usr/local/bin/
 
-# Create your own aliases
-echo 'alias tt="terminal-trainer-cli"' >> ~/.bashrc
-source ~/.bashrc
+# Windows
+# Extract the .zip file and add terminal-trainer.exe to your PATH
+```
+
+### Go Install (For Go Users)
+
+```bash
+go install github.com/hungovercoders/terminal-trainer/experience/cli@latest
+```
+
+### Build from Source
+
+```bash
+git clone https://github.com/hungovercoders/terminal-trainer
+cd terminal-trainer/experience/cli
+go build -o terminal-trainer main.go
+sudo mv terminal-trainer /usr/local/bin/
 ```
 
 ### Uninstall
