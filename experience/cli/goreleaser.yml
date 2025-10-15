@@ -45,9 +45,9 @@ release:
 universal_binaries:
   - replace: true
 
-brews:
-  - name: terminal-trainer
-    homepage: https://github.com/hungovercoders/terminal-trainer
-    repository:
-      owner: hungovercoders
-      name: terminal-trainer
+# brews:
+#   - name: terminal-trainer
+#     homepage: https://github.com/hungovercoders/terminal-trainer
+#     repository:
+#       owner: hungovercoders
+#       name: homebrew-terminal-trainer
