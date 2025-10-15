@@ -7,6 +7,10 @@ before:
     - go mod vendor
     # copy JSONs from the repo root into a local bundle dir
     - mkdir -p ./bundle/knowledge
+    # Debug: show current directory and list contents
+    - pwd
+    - ls -la ../../
+    - ls -la ../../knowledge/
     - cp -R ../../knowledge/*.json ./bundle/knowledge/
 
 builds:
