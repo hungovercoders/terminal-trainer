@@ -17,6 +17,13 @@ jobs:
         with:
           fetch-depth: 0
       
+      - name: Debug repository structure
+        run: |
+          pwd
+          ls -la
+          ls -la knowledge/ || echo "knowledge directory not found"
+          ls -la experience/cli/
+      
       - name: Set up Go
         uses: actions/setup-go@v4
         with:
