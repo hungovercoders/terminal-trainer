@@ -1,0 +1,10 @@
+{
+    "category": "git",
+    "commands": [
+        {
+            "command": "git add .",
+            "description": "Stage all changes for the next commit",
+            "question": "What command stages all changes for the next commit?"
+        }
+    ]
+}

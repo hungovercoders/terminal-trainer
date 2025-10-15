@@ -1,0 +1,60 @@
+{
+    "category": "file_management",
+    "commands": [
+        {
+            "command": "ls",
+            "description": "List files in current directory",
+            "question": "What command lists files in the current directory?"
+        },
+        {
+            "command": "cd",
+            "description": "Change directory",
+            "question": "What command changes the current directory?"   
+        },
+        {
+            "command": "pwd",
+            "description": "Print working directory",
+            "question": "What command prints the current working directory?"
+        },
+        {
+            "command": "mkdir",
+            "description": "Create a new directory",
+            "question": "What command creates a new directory?"
+        },
+        {
+            "command": "rm",
+            "description": "Remove files or directories",
+            "question": "What command removes files or directories?"
+        },
+        {
+            "command": "cp",
+            "description": "Copy files or directories",
+            "question": "What command copies files or directories?"
+        },
+        {
+            "command": "mv",
+            "description": "Move or rename files or directories",
+            "question": "What command moves or renames files or directories?"
+        },
+        {
+            "command": "touch",
+            "description": "Create an empty file or update the timestamp of an existing file",
+            "question": "What command creates an empty file or updates the timestamp of an existing file?"
+        },
+        {
+            "command": "cat",
+            "description": "Concatenate and display file contents",
+            "question": "What command displays the contents of a file?"
+        },
+        {
+            "command": "find",
+            "description": "Search for files and directories",
+            "question": "What command searches for files and directories?"
+        },
+        {
+            "command": "tree",
+            "description": "Display directory structure in a tree-like format",
+            "question": "What command displays the directory structure in a tree-like format?"
+        }
+    ]
+}

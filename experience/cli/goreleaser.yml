@@ -5,14 +5,14 @@ before:
     # keep your existing steps
     - go mod tidy
     - go mod vendor
-    # copy JSONs from the repo root into a local bundle dir
-    - mkdir -p ./bundle/knowledge
-    # Debug: show current directory and list contents
-    - echo "Current directory:"
-    - pwd
-    - ls -la
-    - ls -la knowledge/ || echo "knowledge directory not found"
-    - cp -R knowledge/*.json ./bundle/knowledge/
+    # # copy JSONs from the repo root into a local bundle dir
+    # - mkdir -p ./bundle/knowledge
+    # # Debug: show current directory and list contents
+    # - echo "Current directory:"
+    # - pwd
+    # - ls -la
+    # - ls -la knowledge/ || echo "knowledge directory not found"
+    # - cp -R knowledge/*.json ./bundle/knowledge/
 
 builds:
   - env:
@@ -37,9 +37,10 @@ archives:
     name_template: >-
       {{ .ProjectName }}_{{- title .Os }}_{{- if eq .Arch "amd64" }}x86_64{{- else if eq .Arch "386" }}i386{{- else }}{{ .Arch }}{{ end }}
     files:
+      - knowledge/*.json
       # include the copied JSONs inside the archive under knowledge/
-      - src: ./bundle/knowledge/*.json
-        dst: knowledge/
+      # - src: ./bundle/knowledge/*.json
+      #   dst: knowledge/
       # (optional) add other top-level files if you want them in the archive:
       # - LICENSE
       # - README.md
